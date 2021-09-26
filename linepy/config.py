@@ -28,10 +28,10 @@ class Config(object):
     }
 
     APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
-    APP_VER     = '93.0.4577.82'
+    APP_VER     = '10.14.6'
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'ptatan1983'
-    SYSTEM_VER  = '11.16.2'
+    SYSTEM_VER  = '7.8.1'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
