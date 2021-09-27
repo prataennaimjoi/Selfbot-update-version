@@ -27,11 +27,11 @@ class Config(object):
         'LINE_SERVICES': '1459630796'
     }
 
-    APP_TYPE    = ApplicationType._VALUES_TO_NAMES['IOSIPAD']
-    APP_VER     = '6.1.2'
+    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[304]
+    APP_VER     = '8.12.2'
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'ptatan1983'
-    SYSTEM_VER  = '11.16.2'
+    SYSTEM_VER  = '11.2.5'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
