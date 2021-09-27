@@ -27,7 +27,7 @@ class Config(object):
         'LINE_SERVICES': '1459630796'
     }
 
-    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[304]
+    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[305]
     APP_VER     = '8.12.2'
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'ptatan1983'
