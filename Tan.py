@@ -16,7 +16,7 @@ from multiprocessing import Pool, Process
 from googletrans import Translator
 
 botStart = time.time()
-line = LINE('')
+line = LINE('ptatan1983')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 print ("Login Succes")
