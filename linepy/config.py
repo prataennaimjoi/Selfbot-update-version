@@ -30,7 +30,7 @@ class Config(object):
     }
 
     APP_VERSION = {
-        'ANDROID': '9.0.0',
+        'ANDROID': 'Linux; Android 9; CPH2015 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.82 Mobile Safari/537.36',
         'IOS': '12.3.1',
         'ANDROIDLITE': '2.1.0',
         'BIZANDROID': '1.7.2',
