@@ -31,15 +31,15 @@ class Config(object):
 
     APP_VERSION = {
         'ANDROID': 'Linux; Android 9; CPH2015 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.82 Mobile Safari/537.36',
-        'IOS': '12.3.1',
+        'IOS': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/93.0.4577.82 Mobile/15E148 Safari/604.1',
         'ANDROIDLITE': '2.1.0',
         'BIZANDROID': '1.7.2',
         'BIZIOS': '1.7.5',
         'BIZWEB': '1.0.22',
         'DESKTOPWIN': '5.9.0',
-        'DESKTOPMAC': '10.14.6',
-        'IOSIPAD': '12.3.1',
-        'CHROMEOS': '11.3.1',
+        'DESKTOPMAC': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36',
+        'IOSIPAD': 'Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/93.0.4577.82 Mobile/15E148 Safari/604.1',
+        'CHROMEOS': 'Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36',
         'WIN10': '5.5.5',
         'DEFAULT': '8.11.0'
     }
