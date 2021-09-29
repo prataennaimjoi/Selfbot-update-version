@@ -28,7 +28,7 @@ class Config(object):
     }
 
     APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
-    APP_VER     = '7.72.0'
+    APP_VER     = '2.4.7'
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'ptatan1983'
     SYSTEM_VER  = '11.16.2'
