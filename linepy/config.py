@@ -30,7 +30,7 @@ class Config(object):
     }
 
     APP_VERSION = {
-        'ANDROID': '8.14.2',
+        'ANDROID': '9.0.0',
         'IOS': '8.14.2',
         'ANDROIDLITE': '2.1.0',
         'BIZANDROID': '1.7.2',
@@ -47,8 +47,8 @@ class Config(object):
     APP_TYPE    = 'CHROMEOS'
     APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'Mbah Google'
-    SYSTEM_VER  = '11.2.5'
+    SYSTEM_NAME = 'ptatan1983'
+    SYSTEM_VER  = '7.72.0'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
