@@ -17,8 +17,6 @@ class Config(object):
     LINE_CERTIFICATE_PATH       = '/Q'
     LINE_CHAN_QUERY_PATH        = '/CH4'
     LINE_SQUARE_QUERY_PATH      = '/SQS1'
-    LINE_SHOP_QUERY_PATH        = '/SHOP4'
-    LINE_LIFF_QUERY_PATH        = '/LIFF1'
 
     CHANNEL_ID = {
         'LINE_TIMELINE': '1341209850',
@@ -29,32 +27,14 @@ class Config(object):
         'LINE_SERVICES': '1459630796'
     }
 
-    APP_VERSION = {
-        'ANDROID': 'Linux; Android 9; CPH2015 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.82 Mobile Safari/537.36',
-        'IOS': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/93.0.4577.82 Mobile/15E148 Safari/604.1',
-        'ANDROIDLITE': '2.1.0',
-        'BIZANDROID': '1.7.2',
-        'BIZIOS': '1.7.5',
-        'BIZWEB': '1.0.22',
-        'DESKTOPWIN': '5.9.0',
-        'DESKTOPMAC': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36',
-        'IOSIPAD': 'Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/93.0.4577.82 Mobile/15E148 Safari/604.1',
-        'CHROMEOS': 'Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36',
-        'WIN10': '5.5.5',
-        'DEFAULT': '8.11.0'
-    }
-
-    APP_TYPE    = 'CHROMEOS'
-    APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
+    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
+    APP_VER     = '2.1.5'
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'ptatan1983'
-    SYSTEM_VER  = '7.72.0'
+    SYSTEM_NAME = 'Nadya'
+    SYSTEM_VER  = '12.1.1'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
-    def __init__(self, appType=None):
-        if appType:
-            self.APP_TYPE = appType
-            self.APP_VER = self.APP_VERSION[self.APP_TYPE] if self.APP_TYPE in self.APP_VERSION else self.APP_VERSION['DEFAULT']
+    def __init__(self):
         self.APP_NAME = '%s\t%s\t%s\t%s' % (self.APP_TYPE, self.APP_VER, self.SYSTEM_NAME, self.SYSTEM_VER)
         self.USER_AGENT = 'Line/%s' % self.APP_VER
