@@ -20,7 +20,7 @@ class Liff(object):
     def issueLiffView(self, to):
         az = LiffChatContext(to)
         ax = LiffContext(chat=az)
-        lf = LiffViewRequest('1653635854-BmgzeMGk', ax)
+        lf = LiffViewRequest('1626602314-Vrp0l7Ae', ax)
         return self.liff.issueLiffView(lf)
         
     @loggedIn
@@ -36,7 +36,7 @@ class Liff(object):
         headers = {
             'X-Line-Access': self.authToken,
             'X-Line-Application': self.server.APP_NAME,
-            'X-Line-ChannelId': '1653635854',
+            'X-Line-ChannelId': '1626602314',
             'Content-Type': 'application/json'
         }
         requests.post(url, json=data, headers=headers)
@@ -93,7 +93,7 @@ class Liff(object):
     def issueLiffSquareView(self, to):
         az = LiffSquareChatContext(to)
         ax = LiffContext(squareChat=az)
-        lf = LiffViewRequest('1653635854-BmgzeMGk', ax)
+        lf = LiffViewRequest('1626602314-Vrp0l7Ae', ax)
         return self.liff.issueLiffView(lf)
 
     @loggedIn
